@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессор Ньютонник · Модульная версия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-card">
+        <div class="hero">
+            <div class="badge-new">🔬 Лаборатория профессора Ньютонника</div>
+            <h1>Профессор <span>Ньютонник</span></h1>
+            <div class="sub">Модульная версия · Живой диалог</div>
+        </div>
+
+        <div class="split">
+            <!-- Левая панель: регистрация / профиль / результаты -->
+            <div class="left" id="leftPanel"></div>
+
+            <!-- Правая панель: чат с профессором (всегда виден) -->
+            <div class="right">
+                <div class="chat-header">
+                    <div class="avatar">
+                        <img src="https://i.postimg.cc/VLqKPD4y/PROFESSOR.png" alt="Профессор">
+                    </div>
+                    <div class="name">
+                        <h3>Профессор Ньютонник</h3>
+                        <div class="motto">«Делай своё дело — и будь, что будет»</div>
+                    </div>
+                </div>
+
+                <div class="chat-window" id="chatWindow"></div>
+
+                <div class="chat-input-area">
+                    <input type="text" id="userInput" placeholder="Ваш ответ...">
+                    <button id="sendBtn">Отправить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            «Каждый шаг построен на исследовании, понимании и вдохновении»
+        </div>
+    </div>
+
+    <!-- Подключаем модули по порядку -->
+    <script src="js/main.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/diagnostics.js"></script>
+    <script src="js/results.js"></script>
+    <script src="js/trajectory.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
