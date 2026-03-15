@@ -1,7 +1,7 @@
 // ==================== ЧАТ С ПРОФЕССОРОМ ====================
 
 // URL бэкенда (ваш сервис на Render)
-const BACKEND_URL = 'https://professor-backend-1.onrender.com/chat';
+const BACKEND_URL ='https://professor-backend-1.onrender.com/chat';
 
 // Отправка сообщения
 async function sendMessage() {
